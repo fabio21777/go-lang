@@ -37,4 +37,15 @@ func main() {
 	s5 = append(s5, 1)
 
 	fmt.Println(s5, len(s5), cap(s5))
+
+	// copiando um slice
+	a2 = [5]int{1, 2, 3, 4, 5}
+	s6 := make([]int, 3)
+	s7 := make([]int, 2)
+	//apend
+	s6 = append(s6, 1, 2, 3, 4)
+	// o primeiro parametro é o destino, o segundo é a origem
+	copy(s7, s6)
+	fmt.Println(s6, s7)
+
 }
