@@ -21,6 +21,6 @@ func main() {
 
 	// time.Sleep(time.Second * 5)
 
-	go fale("Maria", "Entendi!!!", 10)
+	go fale("Maria", "Entendi!!!", 10) // go routine é uma forma de executar uma função de forma concorrente
 	fale("João", "Parabéns!", 5)
 }
