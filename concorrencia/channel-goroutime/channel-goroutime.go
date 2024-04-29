@@ -24,8 +24,8 @@ func main() {
 	c := make(chan int)
 	go doisTresQuatroVezes(2, c)
 
-	a, b := <-c, <-c // recebendo dados do canal
-
+	fmt.Println("A") // Aparece primeiro pois a função acima é executada em uma go routine
+	a, b := <-c, <-c // recebendo dados do canal, aqui o programa espera até que os dados sejam enviados e voltar a ser sincrono
 	fmt.Println(a, b)
 
 	fmt.Println(<-c)
