@@ -1,4 +1,4 @@
-module github.com/fabio21777/test
+module github.com/fabio21777/bd
 
 go 1.18
 
